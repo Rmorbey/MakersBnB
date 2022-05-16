@@ -2,18 +2,35 @@ require 'pg'
 
 class Property
   def self.add(description:, contact:)
-    connection = PG.connect(dbname: 'makers_bnb_test')
+    if ENV['ENVIRONMENT'] == 'test'
+      connection = PG.connect(dbname: 'makers_bnb_test')
+    else
+      connection = PG.connect(dbname: 'makers_bnb')
+    end
+
     result = connection.exec_params("INSERT INTO properties (description, contact) VALUES($1, $2) RETURNING id, description, contact;",
     [description, contact]
     )
-    result[0]
+    Property.new(id: result[0]['id'], description: result[0]['description'], contact: result[0]['contact'])
   end
 
-  def self.all
-    connection = PG.connect(dbname: 'makers_bnb_test')
+  def self.view_all
+    if ENV['ENVIRONMENT'] == 'test'
+      connection = PG.connect(dbname: 'makers_bnb_test')
+    else
+      connection = PG.connect(dbname: 'makers_bnb')
+    end
+
     result = connection.exec_params("SELECT * FROM properties;")
     result.map do |property| 
-      p property
+      Property.new(id: property['id'], description: property['description'], contact: property['contact'])
     end
+  end
+
+  attr_reader :id, :description, :contact
+  def initialize(id:, description:, contact:)
+    @id = id
+    @description = description
+    @contact = contact
   end
 end
