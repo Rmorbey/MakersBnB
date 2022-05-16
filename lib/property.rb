@@ -28,6 +28,7 @@ class Property
   end
 
   attr_reader :id, :description, :contact
+
   def initialize(id:, description:, contact:)
     @id = id
     @description = description
