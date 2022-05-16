@@ -28,7 +28,7 @@ Our main specification was as follows:
 
 ## Day 1
 
-Following the AGILE process we discerned the user stories of a Minimum Viable Product within these specs.
+Following the AGILE process we discerned the user stories of a Minimum Viable Product within the above specs.
 
 ```
 As a user,
