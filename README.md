@@ -46,13 +46,13 @@ I would like to contact the host.
 
 This gave us a general idea of how we would begin to set up our first class - Property.
 
-### Property
+### Property Object
 
-| Responsibilities | Collaborators  |
+| Responsibilities | method  |
 | ----------- | ----------- |
-| List the property (description) |  |
-| Description/Contact/Location |  |
-| Viewing properties (description) |  |
+| List the property table(descriptions) | .all |
+| Contain Description/Contact/Location | .view_property |
+| Add property to database | .add |
 
 This enabled our initial thoughts on a database, table and respective schema.
 
@@ -65,4 +65,4 @@ makers_bnb=# CREATE TABLE properties(id SERIAL PRIMARY KEY, description VARCHAR(
 | 1 | 2 bed home | anish@makersbnb.com
 | 2 | 4 bed flat | russell@makersbnb.com
 
-Following these guide lines we'll be able to produce our MVP by Day 2, Day 3 at most. EAZY PEAZY
+Following these guidlines we split up into teams, one to set up an initial web app base, and the other to begin TDD'ing the initial class objects.
