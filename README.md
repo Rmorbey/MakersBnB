@@ -26,6 +26,14 @@ Our main specification was as follows:
 - Nights for which a space has already been booked should not be available for users to book that space
 - Until a user has confirmed a booking request, that space can be booked for that night.
 
+Along with these specifications, wider goals were provided. With a view to implementing:
+- Accepting/denying requests
+- Text message and email notification
+- Chat functionality between host and guest, once booking is confirmed
+- Basic payment processing through Stripe
+
+Good luck to us.
+
 ## Day 1
 
 Following the AGILE process we discerned the user stories of a Minimum Viable Product within the above specs.
