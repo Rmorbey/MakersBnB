@@ -15,7 +15,7 @@
 ### A makers project by Anish, Archie, Luiza, Russell and Tim - Team Hybrid Heroes
 ---
 
-For this Week 5 afternoons project, we were set the task of cloning the getaway monolith, AirBnB. Let's hop eour own efforts aren't as detrimental to the London housing market :)
+For this Week 5 afternoons project, we were set the task of cloning the getaway monolith, AirBnB. Let's hope our own efforts aren't as detrimental to the London housing market :)
 
 Our main specification was as follows:
 - Any signed-up user can list a new space
