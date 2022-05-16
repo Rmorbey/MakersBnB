@@ -3,12 +3,15 @@ require 'sinatra/reloader'
 require_relative './lib/property'
 
 class MakersBnB < Sinatra::Base
+
+  enable :sessions, :method_overide
+
   configure :development do
     register Sinatra::Reloader
   end
 
   get '/' do
-    erb :'properties/index'
+    redirect '/properties'
   end
 
   get '/properties' do

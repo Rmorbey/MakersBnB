@@ -1,7 +1,7 @@
 <h1>MakersBnB</h1>
 
-<% @properties.each do |property| %>
-  <ul>
-    <li><%= property.description %>  <%= property.contact %><li>
-  </ul>
-<% end %>
+<ul>
+  <% @properties.each do |property| %>
+    <div><%= property.description %> - <%= property.contact %><div/>
+  <% end %>
+</ul>
