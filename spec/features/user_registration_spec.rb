@@ -1,5 +1,5 @@
 feature 'registration' do
-  scenario 'a user can sign up' do
+  xscenario 'a user can sign up' do
     visit '/users/new'
     fill_in :name, with: 'Teste Martin'
     fill_in :email, with: 'test@example.com'
