@@ -18,12 +18,16 @@ class MakersBnB < Sinatra::Base
     @properties = Property.view_all
     erb :'properties/index'
   end
+
   get '/properties/new' do
     erb :'properties/new'
   end
+
   post '/properties' do
-    Property.add(description: params[:description], contact: params[:contact])
+    Property.add(description: params[:description], contact: params[:contact], picture_url: params[:picture_url])
     redirect '/properties'
   end
+
   run! if app_file == $0
+
 end

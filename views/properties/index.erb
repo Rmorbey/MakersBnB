@@ -1,7 +1,21 @@
 <h1>MakersBnB</h1>
 
-<ul>
-  <% @properties.each do |property| %>
-    <div><%= property.description %> - <%= property.contact %><div/>
-  <% end %>
-</ul>
+<% @properties.each do |property| %>
+
+  <%= property.description%> %>
+  <br> 
+  <br> 
+  <%= property.contact %>
+  <br> 
+  <br>
+  <img src="<%= property.picture_url %>" />
+  <a href="<%= property.picture_url %>" />
+
+<% end %>
+
+<br>
+<br>
+
+<form action="/properties/new" method="get">
+  <input type='submit' value='List your property'>
+</form>
