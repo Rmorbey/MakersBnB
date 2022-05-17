@@ -1,20 +1,26 @@
 <h1>MakersBnB</h1>
 
-<%# <% @properties.each do %>
+<% @properties.each do |property| %>
 
-  <%# <%= "#{property.description}" %> %>
-  <%# <br> %>
-  <%# <br> %>
-  <%# <%= "#{property.contact}" %> %>
+  <%= property.description%> %>
+  <br> 
+  <br> 
+  <%= property.contact %>
 
-<%# <% end %> %> %>
-
-<%= $house %>
-<%= $contact %>
+<% end %>
 
 <br>
 <br>
 
-<form action="/list_property" method="get">
+<form action="/properties/new" method="get">
   <input type='submit' value='List your property'>
 </form>
+
+
+# <h1>MakersBnB</h1>
+
+# <ul>
+#   <% @properties.each do |property| %>
+#     <div><%= property.description %> - <%= property.contact %><div/>
+#   <% end %>
+# </ul>
