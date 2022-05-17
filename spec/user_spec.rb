@@ -4,6 +4,12 @@ require 'database_helpers'
 describe User do
 
   describe '.create' do
+    it 'hashes the password using BCrypt' do
+      expect(BCrypt::Password).to receive(:create).with('password123')
+
+      User.create(name: 'Teste Martin', email: 'test@example.com', password: 'password123')
+    end
+    
     it 'creates a new user' do
       user = User.create(name: 'Teste Martin', email: 'test@example.com', password: 'password123')
 
