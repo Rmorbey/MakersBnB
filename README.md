@@ -12,7 +12,7 @@
 
 
 # Makers BnB
-### A makers project by Anish, Archie, Luiza, Russell and Tim - Team Hybrid Heroes
+### A 5-day Makers project by Anish, Archie, Luiza, Russell and Tim - Team Hybrid Heroes
 ---
 
 ## Database setup
@@ -61,6 +61,14 @@ I would like to contact the host.
 
 This gave us a general idea of how we would begin to set up our first class - Property.
 
+If we were to define our intended MVP right now, it would be:
+```
+A web app that displays all it's listings on the front page.
+Users can follow a link to list a property. 
+All properties hold minimal contact information.
+With which a potential guest could manually contact a potential host.
+```
+
 ### Property Object
 
 | Responsibilities | method  |
@@ -81,3 +89,15 @@ makers_bnb=# CREATE TABLE properties(id SERIAL PRIMARY KEY, description VARCHAR(
 | 2 | 4 bed flat | russell@makersbnb.com
 
 Following these guidlines we split up into teams, one to set up an initial web app base, and the other to begin TDD'ing the initial class objects.
+
+## Day 2
+
+Having begun with some hiccups, and a few lessons in merging branches. We're approaching our MVP. Having merged the two pairs' independent work, the site is almost there. During this process the team decided to implement images into listings, in the interest of keeping the app recognisably a BnB app at this early stage. Adding a new column to our database...
+
+| table: Properties |   |   |   |
+| ----------- | ----------- | ----------- |  ----------- |
+| id | description  | contact_details | picture_url |
+| 1 | 2 bed home | anish@makersbnb.com | https://imgur.com/jFaSxym |
+| 2 | 4 bed flat | russell@makersbnb.com| https://imgur.com/QsFxtm|
+
+With the MVP fast approaching, further work has been done collating the User Stories of the headline specifications.
