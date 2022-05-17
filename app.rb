@@ -31,6 +31,16 @@ class MakersBnB < Sinatra::Base
     redirect '/properties'
   end
 
+  get '/properties/:id' do
+    params[:id] = Property.view_all.first.id
+    erb :'properties/display'
+  end
+
+  post '/properties/:id/book' do
+    Booking.create(params[:id], params[:start_date], params[:end_date])
+    redirect '/properties/:id'
+  end
+
   run! if app_file == $0
 
 end
