@@ -1,13 +1,17 @@
 <h1>MakersBnB</h1>
 
+<% if @user %>
+  <h2> Welcome, <%= @user.first_name %> </h2>
+  <form action="/sessions/destroy" method="post">
+    <input type="submit" value="Sign out" />
+  </form>
+<% end %>
 
 <form action='/users/new' method='get'>
   <input type="submit" value="Create Account">
 </form>
 
-<% if @user %>
-  <h2> Welcome, <%= @user.first_name %> </h2>
-<% end %>
+
 
 <% @properties.each do |property| %>
 
