@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/russellmorbey/Projects/engineering-projects/MakersBnB/spec/database_connection_spec.rb": {
+      "/Users/archieparchie/Desktop/MakersBnB/spec/database_connection_spec.rb": {
         "lines": [
           1,
           1,
@@ -28,7 +28,7 @@
           null
         ]
       },
-      "/Users/russellmorbey/Projects/engineering-projects/MakersBnB/spec/features/adding_property_spec.rb": {
+      "/Users/archieparchie/Desktop/MakersBnB/spec/features/adding_property_spec.rb": {
         "lines": [
           1,
           1,
@@ -45,7 +45,7 @@
           null
         ]
       },
-      "/Users/russellmorbey/Projects/engineering-projects/MakersBnB/spec/features/homepage_spec.rb": {
+      "/Users/archieparchie/Desktop/MakersBnB/spec/features/homepage_spec.rb": {
         "lines": [
           1,
           1,
@@ -60,7 +60,22 @@
           null
         ]
       },
-      "/Users/russellmorbey/Projects/engineering-projects/MakersBnB/spec/property_spec.rb": {
+      "/Users/archieparchie/Desktop/MakersBnB/spec/features/user_registration_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/archieparchie/Desktop/MakersBnB/spec/property_spec.rb": {
         "lines": [
           1,
           null,
@@ -89,10 +104,65 @@
           1,
           null,
           null,
+          null
+        ]
+      },
+      "/Users/archieparchie/Desktop/MakersBnB/spec/user_spec.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/archieparchie/Desktop/MakersBnB/lib/user.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          null,
+          2,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/archieparchie/Desktop/MakersBnB/spec/database_helpers.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
           null
         ]
       }
     },
-    "timestamp": 1652785427
+    "timestamp": 1652797806
   }
 }

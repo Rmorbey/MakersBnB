@@ -109,6 +109,7 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
+  arm64-darwin-20
   arm64-darwin-21
   x86_64-darwin-21
 
@@ -130,4 +131,4 @@ RUBY VERSION
    ruby 3.0.2p107
 
 BUNDLED WITH
-   2.3.13
+   2.3.12
