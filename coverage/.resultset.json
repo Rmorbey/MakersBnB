@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/archieparchie/Desktop/MakersBnB/spec/database_connection_spec.rb": {
+      "/Users/russellmorbey/Projects/engineering-projects/MakersBnB/spec/database_connection_spec.rb": {
         "lines": [
           1,
           1,
@@ -28,7 +28,7 @@
           null
         ]
       },
-      "/Users/archieparchie/Desktop/MakersBnB/spec/features/adding_property_spec.rb": {
+      "/Users/russellmorbey/Projects/engineering-projects/MakersBnB/spec/features/adding_property_spec.rb": {
         "lines": [
           1,
           1,
@@ -45,7 +45,36 @@
           null
         ]
       },
-      "/Users/archieparchie/Desktop/MakersBnB/spec/features/homepage_spec.rb": {
+      "/Users/russellmorbey/Projects/engineering-projects/MakersBnB/spec/features/authentication_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/russellmorbey/Projects/engineering-projects/MakersBnB/spec/features/homepage_spec.rb": {
         "lines": [
           1,
           1,
@@ -60,7 +89,7 @@
           null
         ]
       },
-      "/Users/archieparchie/Desktop/MakersBnB/spec/features/user_registration_spec.rb": {
+      "/Users/russellmorbey/Projects/engineering-projects/MakersBnB/spec/features/user_registration_spec.rb": {
         "lines": [
           1,
           1,
@@ -75,7 +104,7 @@
           null
         ]
       },
-      "/Users/archieparchie/Desktop/MakersBnB/spec/property_spec.rb": {
+      "/Users/russellmorbey/Projects/engineering-projects/MakersBnB/spec/property_spec.rb": {
         "lines": [
           1,
           null,
@@ -107,7 +136,7 @@
           null
         ]
       },
-      "/Users/archieparchie/Desktop/MakersBnB/spec/user_spec.rb": {
+      "/Users/russellmorbey/Projects/engineering-projects/MakersBnB/spec/user_spec.rb": {
         "lines": [
           1,
           1,
@@ -138,12 +167,28 @@
           1,
           1,
           null,
+          null,
           1,
           1,
           1,
           null,
           1,
           1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          0,
+          null,
+          null,
+          1,
+          1,
+          null,
           1,
           null,
           null,
@@ -151,7 +196,7 @@
           null
         ]
       },
-      "/Users/archieparchie/Desktop/MakersBnB/spec/database_helpers.rb": {
+      "/Users/russellmorbey/Projects/engineering-projects/MakersBnB/spec/database_helpers.rb": {
         "lines": [
           1,
           null,
@@ -162,6 +207,6 @@
         ]
       }
     },
-    "timestamp": 1652801014
+    "timestamp": 1652804769
   }
 }
