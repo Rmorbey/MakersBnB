@@ -15,6 +15,13 @@
 ### A makers project by Anish, Archie, Luiza, Russell and Tim - Team Hybrid Heroes
 ---
 
+## Database setup
+1. Connect to psql
+2. Create the database using the psql command CREATE DATABASE makers_bnb;
+3. Connect to the database using the pqsl command \c makers_bnb;
+4. Run the query we have saved in the file 01_create_property_database.sql
+
+
 For this Week 5 afternoons project, we were set the task of cloning the getaway monolith, AirBnB. Let's hope our own efforts aren't as detrimental to the London housing market :)
 
 Our main specification was as follows:

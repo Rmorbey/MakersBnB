@@ -9,6 +9,6 @@ gem "sinatra"
 gem "sinatra-contrib"
 
 group :test do
-gem "rspec"
-gem "capybara"
+  gem "rspec"
+  gem "capybara"
 end

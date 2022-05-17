@@ -1,0 +1,7 @@
+<h1>MakersBnB</h1>
+
+<ul>
+  <% @properties.each do |property| %>
+    <div><%= property.description %> - <%= property.contact %><div/>
+  <% end %>
+</ul>
