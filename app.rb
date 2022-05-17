@@ -3,6 +3,7 @@ require 'sinatra/reloader'
 require 'sinatra/flash'
 require 'pg'
 require_relative './lib/property'
+require_relative './lib/users'
 require_relative 'database_connection_setup'
 
 class MakersBnB < Sinatra::Base
@@ -27,8 +28,13 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/properties' do
+    Users.add(params[:username])
     Property.add(description: params[:description], contact: params[:contact], picture_url: params[:picture_url])
     redirect '/properties'
+  end
+
+  get '/login' do
+    erb :login
   end
 
   run! if app_file == $0
