@@ -127,25 +127,18 @@
           1,
           null,
           null,
-          null
-        ]
-      },
-      "/Users/archieparchie/Desktop/MakersBnB/lib/user.rb": {
-        "lines": [
+          null,
+          1,
+          1,
           1,
           null,
           1,
+          1,
+          1,
           null,
           1,
-          2,
-          2,
-          2,
-          null,
-          null,
           1,
-          2,
-          null,
-          2,
+          1,
           null,
           null,
           null,
@@ -163,6 +156,6 @@
         ]
       }
     },
-    "timestamp": 1652797806
+    "timestamp": 1652800146
   }
 }

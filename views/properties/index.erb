@@ -1,5 +1,14 @@
 <h1>MakersBnB</h1>
 
+
+<form action='/users/new' method='get'>
+  <input type="submit" value="Create Account">
+</form>
+
+<% if @user %>
+  <h2> Welcome, <%= @user.name %> </h2>
+<% end %>
+
 <% @properties.each do |property| %>
 
   <%= property.description%> %>
