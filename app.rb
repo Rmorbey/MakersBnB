@@ -1,6 +1,9 @@
 require 'sinatra/base'
 require 'sinatra/reloader'
+require 'sinatra/flash'
+require 'pg'
 require_relative './lib/property'
+require_relative 'database_connection_setup'
 
 class MakersBnB < Sinatra::Base
 
