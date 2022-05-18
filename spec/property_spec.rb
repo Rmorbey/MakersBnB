@@ -9,7 +9,6 @@ describe Property do
       connection = PG.connect(dbname: 'makers_bnb_test')
       persisted_data = connection.query("SELECT * FROM properties WHERE id=#{property.id}")
 
-      p persisted_data.first
       expect(persisted_data.first['contact']).to include property.contact
     end
   end
