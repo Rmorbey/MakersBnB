@@ -19,6 +19,7 @@ class MakersBnB < Sinatra::Base
   end
 
   get '/properties' do
+    $user_id = session[:user_id]
     @user = User.find(id: session[:user_id])
     @properties = Property.view_all
     erb :'properties/index'
