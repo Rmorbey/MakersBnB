@@ -2,3 +2,6 @@ CREATE TABLE properties(id SERIAL PRIMARY KEY, description VARCHAR(200), contact
 -- ALTER TABLE properties ADD COLUMN picture_url VARCHAR(200);
 
 CREATE TABLE users(id SERIAL PRIMARY KEY, name VARCHAR(60), email VARCHAR(60), password VARCHAR(140));
+
+-- Adds column for foreign key so for every property, there is a user linked to it.
+ALTER TABLE properties ADD COLUMN user_id INTEGER REFERENCES users (id);

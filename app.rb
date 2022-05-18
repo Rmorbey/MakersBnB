@@ -10,6 +10,7 @@ require_relative './lib/booking'
 class MakersBnB < Sinatra::Base
 
   enable :sessions, :method_overide
+  register Sinatra::Flash
 
   configure :development do
     register Sinatra::Reloader
@@ -20,6 +21,7 @@ class MakersBnB < Sinatra::Base
   end
 
   get '/properties' do
+    @user_id = session[:user_id]
     @user = User.find(id: session[:user_id])
     @properties = Property.view_all
     erb :'properties/index'
@@ -30,7 +32,7 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/properties' do
-    Property.add(description: params[:description], contact: params[:contact], picture_url: params[:picture_url])
+    Property.add(description: params[:description], contact: params[:contact], picture_url: params[:picture_url], user_id: session[:user_id])
     redirect '/properties'
   end
 
@@ -53,6 +55,28 @@ class MakersBnB < Sinatra::Base
     @id = params[:id]
     Booking.create(property_id: params[:id], user_id: session[:user_id], start_date: params[:start_date], end_date: params[:end_date])
     redirect "/properties/#{@id}"
+  end
+
+  get '/sessions/new' do
+    erb :'sessions/new'
+  end
+
+  post '/sessions' do
+    user = User.authenticate(email: params[:email], password: params[:password])
+
+    if user
+      session[:user_id] = user.id 
+      redirect '/properties'
+    else
+      flash[:notice] = 'Please check your email or password.'
+      redirect '/sessions/new'
+    end
+  end
+
+  post '/sessions/destroy' do
+    session.clear
+    flash[:notice] = 'You have signed out.'
+    redirect '/properties'
   end
 
   run! if app_file == $0
