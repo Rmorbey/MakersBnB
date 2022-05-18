@@ -20,6 +20,7 @@ class MakersBnB < Sinatra::Base
   end
 
   get '/properties' do
+    @user_id = session[:user_id]
     @user = User.find(id: session[:user_id])
     @properties = Property.view_all
     erb :'properties/index'
@@ -30,7 +31,7 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/properties' do
-    Property.add(description: params[:description], contact: params[:contact], picture_url: params[:picture_url])
+    Property.add(description: params[:description], contact: params[:contact], picture_url: params[:picture_url], user_id: session[:user_id])
     redirect '/properties'
   end
 
