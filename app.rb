@@ -9,6 +9,7 @@ require_relative './lib/user'
 class MakersBnB < Sinatra::Base
 
   enable :sessions, :method_overide
+  register Sinatra::Flash
 
   configure :development do
     register Sinatra::Reloader
@@ -40,6 +41,28 @@ class MakersBnB < Sinatra::Base
   post '/users' do
     user = User.create(name: params[:name], email: params[:email], password: params[:password])
     session[:user_id] = user.id
+    redirect '/properties'
+  end
+
+  get '/sessions/new' do
+    erb :'sessions/new'
+  end
+
+  post '/sessions' do
+    user = User.authenticate(email: params[:email], password: params[:password])
+
+    if user
+      session[:user_id] = user.id 
+      redirect '/properties'
+    else
+      flash[:notice] = 'Please check your email or password.'
+      redirect '/sessions/new'
+    end
+  end
+
+  post '/sessions/destroy' do
+    session.clear
+    flash[:notice] = 'You have signed out.'
     redirect '/properties'
   end
 
