@@ -27,7 +27,7 @@ class User
     @name.split(' ').first
   end
 
-  def self.authenticate(name: nil, email:, password:)
+  def self.authenticate(email:, password:)
     result = DatabaseConnection.query("SELECT * FROM users WHERE email = $1", [email])
 
     return unless result.any?

@@ -9,6 +9,7 @@ require_relative './lib/user'
 class MakersBnB < Sinatra::Base
 
   enable :sessions, :method_overide
+  register Sinatra::Flash
 
   configure :development do
     register Sinatra::Reloader

@@ -11,7 +11,7 @@
   <%= flash[:notice] %>
 </h2>
   
-<form action="/sessions" method="get">
+<form action="/sessions/new" method="get">
   <input type='submit' value='Sign in' />
 </form>
 
@@ -24,7 +24,7 @@
 
 <% @properties.each do |property| %>
 
-  <%= property.description%> %>
+  <%= property.description%>
   <br> 
   <br> 
   <%= property.contact %>
