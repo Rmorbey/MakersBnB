@@ -47,7 +47,7 @@ class MakersBnB < Sinatra::Base
     erb :'sessions/new'
   end
 
-  post 'sessions' do
+  post '/sessions' do
     user = User.authenticate(email: params[:email], password: params[:password])
 
     if user
@@ -59,7 +59,7 @@ class MakersBnB < Sinatra::Base
     end
   end
 
-  post 'sessions/destroy' do
+  post '/sessions/destroy' do
     session.clear
     flash[:notice] = 'You have signed out.'
     redirect '/properties'
