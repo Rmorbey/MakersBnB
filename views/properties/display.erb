@@ -1,0 +1,11 @@
+<form action="/properties/<%=@id%>/book" method="post">
+
+  <label for="start_date"> Enter the start date </label>
+  <input type="date" name="start_date">
+  <label for="start_date"> Enter the end date </label>
+  <input type="date" name="end_date">
+  <input type="submit" value="Submit">
+  
+</form>
+
+<%= flash[:notice] %>
