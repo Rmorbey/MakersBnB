@@ -54,6 +54,7 @@ class MakersBnB < Sinatra::Base
   post '/properties/:id/book' do
     @id = params[:id]
     Booking.create(property_id: params[:id], user_id: session[:user_id], start_date: params[:start_date], end_date: params[:end_date])
+    flash[:notice] = "Property successfully booked!!!!!!!!!!!!!! :D:D:D:D:D"
     redirect "/properties/#{@id}"
   end
 
