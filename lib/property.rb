@@ -13,7 +13,7 @@ class Property
 
   def self.add(description:, contact:, picture_url:)
     result = DatabaseConnection.query(
-      'INSERT INTO properties (description, contact, picture_url) VALUES($1, $2, $3) RETURNING id, description, contact, picture_url;', [description, contact, picture_url]
+      'INSERT INTO properties (description, contact, picture_url, user_id) VALUES($1, $2, $3, $4) RETURNING id, description, contact, picture_url;', [description, contact, picture_url, $user_id]
       )
     Property.new(id: result[0]['id'], description: result[0]['description'], contact: result[0]['contact'], picture_url: result[0]['picture_url'])
   end
