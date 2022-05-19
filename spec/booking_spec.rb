@@ -33,4 +33,6 @@ describe Booking do
       expect(Booking.all.first.id).to eq booking.id
     end
   end
+
+ 
 end
