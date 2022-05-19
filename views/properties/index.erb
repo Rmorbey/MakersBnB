@@ -35,6 +35,12 @@
 <br>
 <br>
 
+<% if !@user %>
+<form action="/sessions/new" method="get">
+<input type='submit' value='List your property'>
+</form>
+<% else %>
 <form action="/properties/new" method="get">
   <input type='submit' value='List your property'>
 </form>
+<%end%>
