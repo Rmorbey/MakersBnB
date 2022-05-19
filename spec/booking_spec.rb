@@ -7,7 +7,7 @@ describe Booking do
     it "a user can create a booking" do
       user = User.create(name: 'Teste Martin', email: 'test@example.com', password: 'password123')
       url = 'https://www.homestratosphere.com/wp-content/uploads/2020/07/pretty-houses-july092020.jpg'
-      property = Property.add(description: '2 bed home', contact: 'archie@makersbnb.com', picture_url: url, user_id: user.id)    
+      property = Property.add(description: '2 bed home', contact: 'archie@makersbnb.com', picture_url: url, user_id: user.id, price_per_night: '30')    
       booking = Booking.create(property_id: property.id, user_id: user.id, start_date: '01/01/2022', end_date: '08/01/2022')
 
       result = DatabaseConnection.query("SELECT * FROM bookings")
@@ -25,7 +25,7 @@ describe Booking do
     it 'returns all bookings' do
       url = 'https://www.homestratosphere.com/wp-content/uploads/2020/07/pretty-houses-july092020.jpg'
       user = User.create(name: 'Teste Martin', email: 'test@example.com', password: 'password123')
-      property = Property.add(description: '2 bed home', contact: 'archie@makersbnb.com', picture_url: url, user_id: user.id)
+      property = Property.add(description: '2 bed home', contact: 'archie@makersbnb.com', picture_url: url, price_per_night: '30', user_id: user.id)
       booking = Booking.create(property_id: property.id, user_id: user.id, start_date: '01/01/2022', end_date: '08/01/2022')
 
       result = DatabaseConnection.query("SELECT * FROM bookings")

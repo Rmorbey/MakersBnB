@@ -1,13 +1,24 @@
   <h2>
     <%= flash[:notice] %>
   </h2>
-
+<title> Login | MakersBnB </title>
 <form action="/sessions" method="post">
-  <input type="email" name="email" placeholder="Email..." />
-  <input type="password" name="password" placeholder="Password..." />
-  <input type="submit" value="Sign in" />
+<label>
+Email Address
+<br>
+  <input type="email" name="email" />
+</label>
+<br>
+<label>
+Password
+<br>
+  <input type="password" name="password" />
+</label>
+<p> </p> 
+ <input type="submit" value="Sign in" />
 </form>
 
+<h3> Don't have an account? </h3>
 <form action='/users/new' method='get'>
-  <input type="submit" value="Create Account">
+  <input type="submit" value="Create an account">
 </form>
