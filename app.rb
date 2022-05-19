@@ -5,6 +5,7 @@ require 'pg'
 require_relative './lib/property'
 require_relative 'database_connection_setup'
 require_relative './lib/user'
+require_relative './lib/booking'
 
 class MakersBnB < Sinatra::Base
 
@@ -43,6 +44,18 @@ class MakersBnB < Sinatra::Base
     user = User.create(name: params[:name], email: params[:email], password: params[:password])
     session[:user_id] = user.id
     redirect '/properties'
+  end
+  
+  get '/properties/:id' do
+    @id = params[:id]
+    erb :'properties/display'
+  end
+
+  post '/properties/:id/book' do
+    @id = params[:id]
+    Booking.create(property_id: params[:id], user_id: session[:user_id], start_date: params[:start_date], end_date: params[:end_date])
+    flash[:notice] = "Property successfully booked!!!!!!!!!!!!!! :D:D:D:D:D"
+    redirect "/properties/#{@id}"
   end
 
   get '/sessions/new' do
