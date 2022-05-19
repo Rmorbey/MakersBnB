@@ -14,20 +14,26 @@
       <a href='/properties'><img src="/MakersBnB_full.png" /></a>
     </header>
 
-    <div class='form_background'>
-    </div>
-    <h1 id='h1_sign_up'>Sign up</h1>
-    <form action='/users' method='post'>
-      <label id='name_label'>Name</label>
-      <input id='name_input' type='text' name='name' required>
-      <label id='email_label'>Email Address</label>
-      <input id='email_input' type='email' name='email' required>
-      <label id='password_label' >Password</label> 
-      <input id='password_input' type='password' name='password' required>
-      <input id='submit_signup' type='submit' value='Sign up now'>
-    </form>
-
+    <main>
+      <div class='main_container'>
+        <div class='form_background'>
+          <h1>Sign up</h1>
+          <form action='/users' method='post'>
+            <div class='signup_input'>
+              <label>Name</label>
+                <input type='text' name='name' required>
+              <label>Email Address</label>
+                <input type='email' name='email' required>
+              <label>Password</label> 
+                <input type='password' name='password' required>
+            </div>
+            <div class='additional_input'>
+              <input type='submit' value='Sign up now'>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
   </body>
-
 </html>
   

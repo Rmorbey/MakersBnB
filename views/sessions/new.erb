@@ -14,26 +14,31 @@
       <a href='/properties'><img src="/MakersBnB_full.png" /></a>
     </header>
 
+    <main>
+      <div class='main_container'>
+        <div class='form_background'>
+          <h1>Log in</h1>
+          <h2>
+            <%= flash[:notice] %>
+          </h2>
+          <form action="/sessions" method="post">
+            <div class='login_input'>
+              <label>Email</label>
+                <input type="email" name="email" />
+              <label>Password</label>
+                <input type="password" name="password" />
+            </div>
+            <div class='additional_input'>
+                <input type="submit" value="Sign in" />
+              </form>
 
-      <h2>
-        <%= flash[:notice] %>
-      </h2>
-    <div class='form_background'>
-    </div>
-
-    <form action="/sessions" method="post">
-      <label>Email Address</label>
-      <input type="email" name="email" />
-      <label>Password</label>
-      <input type="password" name="password" />
-      <input type="submit" value="Sign in" />
-    </form>
-
-    <h3> Don't have an account? </h3>
-    <form action='/users/new' method='get'>
-      <input type="submit" value="Create an account">
-    </form>
-
+              <h3> Don't have an account? </h3>
+              <form action='/users/new' method='get'>
+                <input type="submit" value="Create an account">
+            </div>
+          </form>
+        </div>
+      </div>
+    <main>
   </body>
-
 </html>

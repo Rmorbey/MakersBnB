@@ -11,32 +11,38 @@
 
   <body>
     <header>
-      <a href='/properties'><img src="/MakersBnB_full.png" /></a>
-      <form action="/sessions/destroy" method="post">
-         <input id='sign_out_button' type="submit" value="Sign out" />
-      </form>
-      <form action="/properties/new" method="get">
-        <input id='list_property_button' type='submit' value='List your property'>
-      </form>
+      <div>
+        <a href='/properties'><img src="/MakersBnB_full.png" id='logo'/></a>
+      </div>
+      <div class='header_buttons'>
+        <form action="/sessions/destroy" method="post">
+          <input class='header_button' type="submit" value="Sign out" />
+        </form>
+        <form action="/properties/new" method="get">
+          <input class='header_button' type='submit' value='List your property'>
+        </form>
+      </div>
     </header>
 
-  <main>
-    <h1>We make-a the bed, we make-a the breakfast</h1>
-    <h2>
-      <%= flash[:notice] %>
-    </h2>
-  
-  <div class='container'>
-    <% @properties.each do |property| %>
-      <div class='property_tile'>
-        <div class='image_container'><img src="<%= property.picture_url%>"/></div>
-        <h2><%= property.description%></h2>
-        <h2>£<%= property.price_per_night %></h2>
+    <main>
+      <h1>We make-a the bed, we make-a the breakfast</h1>
+      <h2>
+        <%= flash[:notice] %>
+      </h2>
+    
+      <div class='properties_container'>
+        <% @properties.each do |property| %>
+          <div class='property_tile'>
+            <div class='image_container'>
+              <img src="<%= property.picture_url%>"/>
+            </div>
+            <div class='text_container'>
+              <h2><%= property.description%></h2>
+              <h2>£<%= property.price_per_night %></h2>
+            </div>
+          </div>
+        <% end %>
       </div>
-    <% end %>
-  </div>
-
     </main>
   </body>
-
 </html>

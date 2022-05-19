@@ -9,17 +9,24 @@ body {
   font-style: normal;
 }
 
+main {
+  position: relative;
+  top: 140px;
+}
+
+ /* ---header---- */
+
 header {
   position: absolute;
-  width: 1440px;
+  width: 100%;
   height: 104px;
   left: 0px;
   top: 0px;
-
   background: #FFFFFF;
+
 }
 
-header img {
+#logo {
   position: absolute;
   width: 221px;
   height: 58px;
@@ -27,108 +34,12 @@ header img {
   top: 23px;
  }
 
- .form_background {
-  position: absolute;
-  width: 604px;
-  height: 725px;
-  left: 418px;
-  top: 149px;
-  
-  background: #F1EEEE;
-  border: 4px solid #000000;
-  box-shadow: -4px 6px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 75px;
- }
-
- #name_label {
-  position: absolute;
-  width: 51px;
-  height: 29px;
-  left: 507px;
-  top: 268px;
-
-  font-family: 'Zen Maru Gothic';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 29px;
- }
-
- #name_input {
-  position: absolute;
-  width: 442px;
-  height: 72px;
-  left: 499px;
-  top: 306px;
-  
-  background: #FFFFFF;
-  border: 3px solid #000000;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
- }
-
- #email_label {
-  position: absolute;
-  width: 49px;
-  height: 29px;
-  left: 505px;
-  top: 413px;
-  
-  font-family: 'Zen Maru Gothic';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 29px;
- }
-
- #email_input {
-  position: absolute;
-  width: 442px;
-  height: 72px;
-  left: 497px;
-  top: 451px;
-  
-  background: #FFFFFF;
-  border: 3px solid #000000;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
- }
-
- #password_label {
-  position: absolute;
-  width: 85px;
-  height: 29px;
-  left: 505px;
-  top: 558px;
-
-  font-family: 'Zen Maru Gothic';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 29px;
- }
-
- #password_input {
-  position: absolute;
-  width: 442px;
-  height: 72px;
-  left: 497px;
-  top: 596px;
-  
-  background: #FFFFFF;
-  border: 3px solid #000000;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
- }
-
- #submit_signup {
-  position: absolute;
-  width: 203px;
-  height: 65px;
-  left: 617px;
-  top: 746px;
-  
-  background: #FFFFFF;
+ input[type='submit'] {
+  background: white;
   border: 3px solid #000000;
   border-radius: 10px;
-  
+  width: 203px;
+  height: 65px;
   font-family: 'Zen Maru Gothic';
   font-style: normal;
   font-weight: 700;
@@ -137,81 +48,99 @@ header img {
   cursor: pointer;
  }
 
- #submit_signup:hover {
+input[type='submit']:hover {
    background-color: #ACBAC3;
    color: white;
+}
+
+/* header in properties view */
+
+.header_buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header_button {
+  margin: 20px 20px 0 0;
+}
+
+ /* ---/users/new.erb---- */
+/* ---/sessions/new.erb---- */
+
+.main_container {
+  display: flex;
+  justify-content: center;
+}
+
+.form_background {
+  width: 604px;
+  height: 725px;
+  background: #F1EEEE;
+  border: 4px solid #000000;
+  box-shadow: -4px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 75px;
+  padding: 70px;
  }
 
- #h1_sign_up {
-  position: absolute;
-  width: 101px;
-  height: 43px;
-  left: 505px;
-  top: 190px;
-  
-  font-family: 'Zen Maru Gothic';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 43px;
-  text-decoration-line: underline;
-  color: #000000;
+ .form_background h1 {
+  text-align: left;
+  text-decoration: underline;
+  margin-bottom: 20px;
  }
 
-#sign_out_button {
-  position: absolute;
-  width: 143px;
-  height: 53px;
-  left: 1178px;
-  top: 25px;
-
-  background: #FFFFFF;
-  border: 3px solid #000000;
-  border-radius: 10px;
+label {
   font-family: 'Zen Maru Gothic';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 29px;
-  color: #000000;
-}
+  width: 51px;
+  height: 29px;
+ }
 
-#list_property_button {
-  position: absolute;
-  width: 172px;
-  height: 53px;
-  left: 981px;
-  top: 25px;
-
+ input {
+  width: 442px;
+  height: 72px;
   background: #FFFFFF;
   border: 3px solid #000000;
-  border-radius: 10px;
-  font-family: 'Zen Maru Gothic';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 29px;
-  color: #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 10px 0 30px 0;
+ }
+
+ .additional_input {
+  text-align: center;
 }
+
+/* ---/properties/index.erb--- */
 
 h1 {
-  position: absolute;
-  width: 606px;
-  height: 43px;
-  left: 417px;
-  top: 137px;
-
+  text-align: center;
   font-family: 'Zen Maru Gothic';
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 43px;
   color: #000000;
+}
+
+.properties_container {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
 .property_tile {
   width: 406px;
   height: 364px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
   background: #F1EEEE;
   border: 3px solid #ACBAC3;
   box-shadow: -4px 6px 4px rgba(0, 0, 0, 0.25);
@@ -219,16 +148,23 @@ h1 {
 }
 
 .image_container {
-  width: 315px;
+  max-width: 315px;
+  min-width: 315px;
   height: 214px;
   border: 1px solid black;
   border-radius: 15px;
+  overflow: hidden;
+  margin: 10px;
 }
 
 img {
-  max-width: 100%;
+  width: auto;
   max-height: 100%;
-  object-fit: fill;
+  display: block;
+}
+
+.text_container {
+  min-width: 315px;
 }
 
 .property_tile h2 {
