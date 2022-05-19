@@ -1,25 +1,30 @@
-<title> SignUp | MakersBnB </title>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name='viewport' content='widht=devide-width,initial-scale=1'>
+    <title>MakersBnB</title>
+    <link href='/styles.css' rel="stylesheet" type="text/css">
+  </head>
 
-<form action='/users' method='post'>
-<label>
-Name
-<br>
-  <input type='text' name='name' required>
-</label>
-<br>
-<label>
-Email Address
-<br> 
-  <input type='email' name='email' required>
-</label>
-<br>
-<label>
-Password
-<br>
-  <input type='password' name='password' required>
- </label> 
- <p></p>
-  <input type='submit' value='Submit'>
-</form>
-  
+  <body>
+    <header>
+      <a href='/properties'><img src="/MakersBnB_full.png" /></a>
+    </header>
+
+    <div class='form_background'>
+    </div>
+    <h1 id='h1_sign_up'>Sign up</h1>
+    <form action='/users' method='post'>
+      <label id='name_label'>Name</label>
+      <input id='name_input' type='text' name='name' required>
+      <label id='email_label'>Email Address</label>
+      <input id='email_input' type='email' name='email' required>
+      <label id='password_label' >Password</label> 
+      <input id='password_input' type='password' name='password' required>
+      <input id='submit_signup' type='submit' value='Sign up now'>
+    </form>
+
+  </body>
+
+</html>
   

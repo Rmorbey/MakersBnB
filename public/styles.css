@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: absolute;
+  width: 1440px;
+  height: 104px;
+  left: 0px;
+  top: 0px;
+
+  background: #FFFFFF;
+}
+
+header img {
+  position: absolute;
+  width: 221px;
+  height: 58px;
+  left: 32px;
+  top: 23px;
+ }
+
+ .form_background {
+  position: absolute;
+  width: 604px;
+  height: 725px;
+  left: 418px;
+  top: 149px;
+  
+  background: #F1EEEE;
+  border: 4px solid #000000;
+  box-shadow: -4px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 75px;
+ }
+
+ #name_label {
+  position: absolute;
+  width: 51px;
+  height: 29px;
+  left: 507px;
+  top: 268px;
+
+  font-family: 'Zen Maru Gothic';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+ }
+
+ #name_input {
+  position: absolute;
+  width: 442px;
+  height: 72px;
+  left: 499px;
+  top: 306px;
+  
+  background: #FFFFFF;
+  border: 3px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+
+ #email_label {
+  position: absolute;
+  width: 49px;
+  height: 29px;
+  left: 505px;
+  top: 413px;
+  
+  font-family: 'Zen Maru Gothic';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+ }
+
+ #email_input {
+  position: absolute;
+  width: 442px;
+  height: 72px;
+  left: 497px;
+  top: 451px;
+  
+  background: #FFFFFF;
+  border: 3px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+
+ #password_label {
+  position: absolute;
+  width: 85px;
+  height: 29px;
+  left: 505px;
+  top: 558px;
+
+  font-family: 'Zen Maru Gothic';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+ }
+
+ #password_input {
+  position: absolute;
+  width: 442px;
+  height: 72px;
+  left: 497px;
+  top: 596px;
+  
+  background: #FFFFFF;
+  border: 3px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+
+ #submit_signup {
+  position: absolute;
+  width: 203px;
+  height: 65px;
+  left: 617px;
+  top: 746px;
+  
+  background: #FFFFFF;
+  border: 3px solid #000000;
+  border-radius: 10px;
+  
+  font-family: 'Zen Maru Gothic';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  cursor: pointer;
+ }
+
+ #submit_signup:hover {
+   background-color: #ACBAC3;
+   color: white;
+ }
+
+ #h1_sign_up {
+  position: absolute;
+  width: 101px;
+  height: 43px;
+  left: 505px;
+  top: 190px;
+  
+  font-family: 'Zen Maru Gothic';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 43px;
+  text-decoration-line: underline;
+  color: #000000;
+ }
