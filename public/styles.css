@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Zen Maru Gothic';
+  font-style: normal;
+}
+
 header {
   position: absolute;
   width: 1440px;
@@ -152,3 +157,85 @@ header img {
   text-decoration-line: underline;
   color: #000000;
  }
+
+#sign_out_button {
+  position: absolute;
+  width: 143px;
+  height: 53px;
+  left: 1178px;
+  top: 25px;
+
+  background: #FFFFFF;
+  border: 3px solid #000000;
+  border-radius: 10px;
+  font-family: 'Zen Maru Gothic';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: #000000;
+}
+
+#list_property_button {
+  position: absolute;
+  width: 172px;
+  height: 53px;
+  left: 981px;
+  top: 25px;
+
+  background: #FFFFFF;
+  border: 3px solid #000000;
+  border-radius: 10px;
+  font-family: 'Zen Maru Gothic';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: #000000;
+}
+
+h1 {
+  position: absolute;
+  width: 606px;
+  height: 43px;
+  left: 417px;
+  top: 137px;
+
+  font-family: 'Zen Maru Gothic';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 43px;
+  color: #000000;
+}
+
+.property_tile {
+  width: 406px;
+  height: 364px;
+  background: #F1EEEE;
+  border: 3px solid #ACBAC3;
+  box-shadow: -4px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 75px;
+}
+
+.image_container {
+  width: 315px;
+  height: 214px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: fill;
+}
+
+.property_tile h2 {
+  font-family: 'Zen Maru Gothic';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: #000000;
+}
