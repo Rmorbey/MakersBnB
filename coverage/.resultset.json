@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/timgraham/Projects/Week5/MakersBnB/spec/booking_spec.rb": {
+      "/Users/archieparchie/Desktop/MakersBnB/spec/booking_spec.rb": {
         "lines": [
           1,
           1,
@@ -41,7 +41,7 @@
           null
         ]
       },
-      "/Users/timgraham/Projects/Week5/MakersBnB/spec/database_connection_spec.rb": {
+      "/Users/archieparchie/Desktop/MakersBnB/spec/database_connection_spec.rb": {
         "lines": [
           1,
           1,
@@ -68,7 +68,7 @@
           null
         ]
       },
-      "/Users/timgraham/Projects/Week5/MakersBnB/spec/features/adding_property_spec.rb": {
+      "/Users/archieparchie/Desktop/MakersBnB/spec/features/adding_property_spec.rb": {
         "lines": [
           1,
           1,
@@ -85,7 +85,7 @@
           null
         ]
       },
-      "/Users/timgraham/Projects/Week5/MakersBnB/spec/features/authentication_spec.rb": {
+      "/Users/archieparchie/Desktop/MakersBnB/spec/features/authentication_spec.rb": {
         "lines": [
           1,
           1,
@@ -141,7 +141,7 @@
           null
         ]
       },
-      "/Users/timgraham/Projects/Week5/MakersBnB/spec/features/homepage_spec.rb": {
+      "/Users/archieparchie/Desktop/MakersBnB/spec/features/homepage_spec.rb": {
         "lines": [
           1,
           1,
@@ -156,7 +156,7 @@
           null
         ]
       },
-      "/Users/timgraham/Projects/Week5/MakersBnB/spec/features/set_availability_spec.rb": {
+      "/Users/archieparchie/Desktop/MakersBnB/spec/features/set_availability_spec.rb": {
         "lines": [
           1,
           1,
@@ -175,7 +175,7 @@
           null
         ]
       },
-      "/Users/timgraham/Projects/Week5/MakersBnB/spec/features/user_registration_spec.rb": {
+      "/Users/archieparchie/Desktop/MakersBnB/spec/features/user_registration_spec.rb": {
         "lines": [
           1,
           1,
@@ -190,7 +190,7 @@
           null
         ]
       },
-      "/Users/timgraham/Projects/Week5/MakersBnB/spec/property_spec.rb": {
+      "/Users/archieparchie/Desktop/MakersBnB/spec/property_spec.rb": {
         "lines": [
           1,
           null,
@@ -225,7 +225,7 @@
           null
         ]
       },
-      "/Users/timgraham/Projects/Week5/MakersBnB/spec/user_spec.rb": {
+      "/Users/archieparchie/Desktop/MakersBnB/spec/user_spec.rb": {
         "lines": [
           1,
           1,
@@ -291,7 +291,7 @@
           null
         ]
       },
-      "/Users/timgraham/Projects/Week5/MakersBnB/spec/database_helpers.rb": {
+      "/Users/archieparchie/Desktop/MakersBnB/spec/database_helpers.rb": {
         "lines": [
           1,
           null,
@@ -302,6 +302,6 @@
         ]
       }
     },
-    "timestamp": 1652890169
+    "timestamp": 1652891590
   }
 }
