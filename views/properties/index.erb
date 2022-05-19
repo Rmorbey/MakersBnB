@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+  
+  <html lang="en">
+
+  <head>
+
+<title> Makers BnB </title>
+
 <h1>MakersBnB</h1>
 
 <% if @user %>
@@ -25,7 +33,7 @@
   <%= property.contact %>
   <br> 
   <br>
-  <%= property.price_per_night %>
+  £<%= property.price_per_night %>
   <br> 
   <br>
   <img src="<%= property.picture_url %>" />
@@ -45,3 +53,7 @@
   <input type='submit' value='List your property'>
 </form>
 <%end%>
+
+</head>
+
+</html>
