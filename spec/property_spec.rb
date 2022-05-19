@@ -28,4 +28,17 @@ describe Property do
       expect(properties.length).to eq 2
     end
   end
+
+  describe '.find_by_user' do
+    it 'returns nil if no ID is given' do
+      expect(Property.find_by_user(id: nil)).to eq nil
+    end
+
+    it 'finds a property by user id' do
+      user = User.create(name: 'Teste Martin', email: 'test@example.com', password: 'password123')
+      Property.add(description: '2 bed home', contact: 'archie@makersbnb.com', picture_url: "https://imgur.com/uhj0V41", price_per_night: '30', user_id: user.id)
+      result = Property.find_by_user(id: user.id)
+      expect(result.user_id).to eq user.id
+    end
+  end
 end

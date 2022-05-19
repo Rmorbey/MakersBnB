@@ -15,7 +15,14 @@ class Booking
     }
   end
 
-  attr_reader :id, :property_id, :user_id, :start_date, :end_date
+  def self.requested
+    result = DatabaseConnection.query("SELECT * FROM bookings WHERE confirmed=false")
+    result.map { |booking|
+      Booking.new(id: booking['id'], property_id: booking['property_id'], user_id: booking['user_id'], start_date: booking['start_date'], end_date: booking['end_date'])
+    }
+  end
+
+  attr_reader :id, :property_id, :user_id, :start_date, :end_date, :confirmed
 
   def initialize(id:, property_id:, user_id:, start_date:, end_date:)
     @id = id
