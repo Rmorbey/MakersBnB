@@ -31,7 +31,7 @@ class MakersBnB < Sinatra::Base
   end
 
   post '/properties' do
-    Property.add(description: params[:description], contact: params[:contact], picture_url: params[:picture_url], user_id: session[:user_id])
+    Property.add(description: params[:description], contact: params[:contact], picture_url: params[:picture_url], user_id: session[:user_id], price_per_night: params[:price_per_night])
     redirect '/properties'
   end
 
