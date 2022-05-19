@@ -23,7 +23,7 @@ class Property
   def self.view_all
     result = DatabaseConnection.query('SELECT * FROM properties;')
     result.map do |property| 
-      Property.new(id: property['id'], description: property['description'], contact: property['contact'], picture_url: property['picture_url'], price_per_night: result[0]['price_per_night'], user_id: result[0]['user_id'])
+      Property.new(id: property['id'], description: property['description'], contact: property['contact'], picture_url: property['picture_url'], price_per_night: property['price_per_night'], user_id: property['user_id'])
     end
   end
 
