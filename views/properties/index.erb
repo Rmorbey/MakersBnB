@@ -20,9 +20,7 @@
   <input type="submit" value="Create Account">
 </form>
 
-
-
-<% @properties.each do |property| %>
+<h2><% @properties.each do |property| %>
 
   <%= property.description%>
   <br> 
@@ -30,10 +28,13 @@
   <%= property.contact %>
   <br> 
   <br>
-  <a href='/properties/<%= property.id %>' ><img src="<%= property.picture_url %>" /></a>
-  <a href="<%= property.picture_url %>" />
-
-<% end %>
+  <%= property.price_per_night %>
+  <br> 
+  <br>
+  <img src="<%= property.picture_url %>" />
+  <br> 
+  <br>
+<% end %></h2>
 
 <br>
 <br>
