@@ -5,20 +5,17 @@
   <form action="/sessions/destroy" method="post">
     <input type="submit" value="Sign out" />
   </form>
-  <% end %>
+<% end %>
 
 <h2>
   <%= flash[:notice] %>
 </h2>
   
+<% if !@user %>
 <form action="/sessions/new" method="get">
   <input type='submit' value='Sign in' />
 </form>
-
-
-<form action='/users/new' method='get'>
-  <input type="submit" value="Create Account">
-</form>
+<%end%>
 
 <h2><% @properties.each do |property| %>
 
@@ -39,6 +36,12 @@
 <br>
 <br>
 
+<% if !@user %>
+<form action="/sessions/new" method="get">
+<input type='submit' value='List your property'>
+</form>
+<% else %>
 <form action="/properties/new" method="get">
   <input type='submit' value='List your property'>
 </form>
+<%end%>
