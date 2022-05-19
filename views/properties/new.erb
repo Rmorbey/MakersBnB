@@ -1,12 +1,17 @@
-<form action="/properties" method="post">
-
 <title> Add Property | Makers BnB </title>
 
+<form action="/properties" method="post">
   <input type="text" name="description" placeholder="Property description..." required/>
-  <%# <input type="text" name="contact" placeholder="Your contact details."/> %>
-  </br>
+  <br>
   <input type="text" name="picture_url" placeholder="Image url..." required/>
+  <br>
   <input type="text" name="price_per_night" placeholder="Price per night in £"/>
 
   <input type='submit' value="Submit" />
+
+  
+</form>
+
+<form action="/sessions/destroy" method="post">
+  <input type="submit" value="Sign out" />
 </form>

@@ -17,7 +17,7 @@ class MakersBnB < Sinatra::Base
   end
 
   get '/' do
-    redirect '/properties'
+    redirect '/sessions/new'
   end
 
   get '/properties' do
@@ -80,7 +80,7 @@ class MakersBnB < Sinatra::Base
   post '/sessions/destroy' do
     session.clear
     flash[:notice] = 'You have signed out.'
-    redirect '/properties'
+    redirect '/sessions/new'
   end
 
   run! if app_file == $0
