@@ -123,12 +123,12 @@
           1,
           1,
           null,
-          1,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
+          0,
           null,
-          1,
+          0,
           null,
           1,
           1,
@@ -214,6 +214,7 @@
           null
         ]
       },
+
       "/Users/timgraham/Projects/Week5/MakersBnB/spec/features/set_availability_spec.rb": {
         "lines": [
           1,
@@ -244,7 +245,7 @@
           1,
           1,
           null,
-          1,
+          0,
           null,
           null
         ]
