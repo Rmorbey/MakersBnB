@@ -47,7 +47,7 @@
         </div>
         <div class='current_bookings'>
           <h1>Current bookings</h1>
-          <% @bookings.map |booking| %>
+          <% @bookings.map do |booking| %>
             <ul>
               <li><%= @booking.start_date %><%= @booking.end_date%></li>
             <ul>
