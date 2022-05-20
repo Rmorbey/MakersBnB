@@ -34,4 +34,10 @@ class Property
       
   end
 
+  def self.find_by_property_id(id:)
+    result = DatabaseConnection.query("SELECT * FROM properties WHERE id='#{id}'")
+    result.map do |property| 
+      Property.new(id: property['id'], description: property['description'], contact: property['contact'], picture_url: property['picture_url'], price_per_night: property['price_per_night'], user_id: property['user_id'])
+    end
+  end
 end
