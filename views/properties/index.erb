@@ -1,59 +1,48 @@
 <!DOCTYPE html>
-  
-  <html lang="en">
-
+<html>
   <head>
+    <meta name='viewport' content='widht=devide-width,initial-scale=1'>
+    <title>MakersBnB</title>
+    <link href='/styles.css' rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  </head>
 
-<title> Makers BnB </title>
+  <body>
+    <header>
+      <div>
+        <a href='/properties'><img src="/MakersBnB_full.png" id='logo'/></a>
+      </div>
+      <div class='header_buttons'>
+        <form action="/sessions/destroy" method="post">
+          <input class='header_button' type="submit" value="Sign out" />
+        </form>
+        <form action="/properties/new" method="get">
+          <input class='header_button' type='submit' value='List your property'>
+        </form>
+      </div>
+    </header>
 
-<h1>MakersBnB</h1>
-
-<% if @user %>
-  <h2> Welcome, <%= @user.first_name %> </h2>
-  <form action="/sessions/destroy" method="post">
-    <input type="submit" value="Sign out" />
-  </form>
-<% end %>
-
-<h2>
-  <%= flash[:notice] %>
-</h2>
-  
-<% if !@user %>
-<form action="/sessions/new" method="get">
-  <input type='submit' value='Sign in' />
-</form>
-<%end%>
-
-<h2><% @properties.each do |property| %>
-
-  <%= property.description%>
-  <br> 
-  <br> 
-  <%= property.contact %>
-  <br> 
-  <br>
-  £<%= property.price_per_night %>
-  <br> 
-  <br>
-  <img src="<%= property.picture_url %>" />
-  <br> 
-  <br>
-<% end %></h2>
-
-<br>
-<br>
-
-<% if !@user %>
-<form action="/sessions/new" method="get">
-<input type='submit' value='List your property'>
-</form>
-<% else %>
-<form action="/properties/new" method="get">
-  <input type='submit' value='List your property'>
-</form>
-<%end%>
-
-</head>
-
+    <main>
+      <h1>We make-a the bed, we make-a the breakfast</h1>
+      <h2>
+        <%= flash[:notice] %>
+      </h2>
+    
+      <div class='properties_container'>
+        <% @properties.each do |property| %>
+          <div class='property_tile'>
+            <div class='image_container'>
+              <img src="<%= property.picture_url%>"/>
+            </div>
+            <div class='text_container'>
+              <h2><%= property.description%></h2>
+              <h2>£<%= property.price_per_night %></h2>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </main>
+  </body>
 </html>

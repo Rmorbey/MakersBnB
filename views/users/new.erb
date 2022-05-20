@@ -1,25 +1,39 @@
-<title> SignUp | MakersBnB </title>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name='viewport' content='widht=devide-width,initial-scale=1'>
+    <title>MakersBnB</title>
+    <link href='/styles.css' rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  </head>
 
-<form action='/users' method='post'>
-<label>
-Name
-<br>
-  <input type='text' name='name' required>
-</label>
-<br>
-<label>
-Email Address
-<br> 
-  <input type='email' name='email' required>
-</label>
-<br>
-<label>
-Password
-<br>
-  <input type='password' name='password' required>
- </label> 
- <p></p>
-  <input type='submit' value='Submit'>
-</form>
-  
+  <body>
+    <header>
+      <a href='/properties'><img src="/MakersBnB_full.png" /></a>
+    </header>
+
+    <main>
+      <div class='main_container'>
+        <div class='form_background'>
+          <h1>Sign up</h1>
+          <form action='/users' method='post'>
+            <div class='signup_input'>
+              <label>Name</label>
+                <input type='text' name='name' required>
+              <label>Email Address</label>
+                <input type='email' name='email' required>
+              <label>Password</label> 
+                <input type='password' name='password' required>
+            </div>
+            <div class='additional_input'>
+              <input type='submit' value='Sign up now'>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
   

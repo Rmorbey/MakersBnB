@@ -1,24 +1,44 @@
-  <h2>
-    <%= flash[:notice] %>
-  </h2>
-<title> Login | MakersBnB </title>
-<form action="/sessions" method="post">
-<label>
-Email Address
-<br>
-  <input type="email" name="email" />
-</label>
-<br>
-<label>
-Password
-<br>
-  <input type="password" name="password" />
-</label>
-<p> </p> 
- <input type="submit" value="Sign in" />
-</form>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name='viewport' content='widht=devide-width,initial-scale=1'>
+    <title>MakersBnB</title>
+    <link href='/styles.css' rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  </head>
 
-<h3> Don't have an account? </h3>
-<form action='/users/new' method='get'>
-  <input type="submit" value="Create an account">
-</form>
+  <body>
+    <header>
+      <a href='/properties'><img src="/MakersBnB_full.png" /></a>
+    </header>
+
+    <main>
+      <div class='main_container'>
+        <div class='form_background'>
+          <h1>Log in</h1>
+          <h2>
+            <%= flash[:notice] %>
+          </h2>
+          <form action="/sessions" method="post">
+            <div class='login_input'>
+              <label>Email</label>
+                <input type="email" name="email" />
+              <label>Password</label>
+                <input type="password" name="password" />
+            </div>
+            <div class='additional_input'>
+                <input type="submit" value="Sign in" />
+              </form>
+
+              <h3> Don't have an account? </h3>
+              <form action='/users/new' method='get'>
+                <input type="submit" value="Create an account">
+            </div>
+          </form>
+        </div>
+      </div>
+    <main>
+  </body>
+</html>

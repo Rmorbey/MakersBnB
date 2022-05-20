@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Zen Maru Gothic';
+  font-style: normal;
+}
+
+main {
+  position: relative;
+  top: 140px;
+}
+
+ /* ---header---- */
+
+header {
+  position: absolute;
+  width: 100%;
+  height: 104px;
+  left: 0px;
+  top: 0px;
+  background: #FFFFFF;
+
+}
+
+#logo {
+  position: absolute;
+  width: 221px;
+  height: 58px;
+  left: 32px;
+  top: 23px;
+ }
+
+ input[type='submit'] {
+  background: white;
+  border: 3px solid #000000;
+  border-radius: 10px;
+  width: 203px;
+  height: 65px;
+  font-family: 'Zen Maru Gothic';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  cursor: pointer;
+ }
+
+input[type='submit']:hover {
+   background-color: #ACBAC3;
+   color: white;
+}
+
+/* header in properties view */
+
+.header_buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header_button {
+  margin: 20px 20px 0 0;
+}
+
+ /* ---/users/new.erb---- */
+/* ---/sessions/new.erb---- */
+
+.main_container {
+  display: flex;
+  justify-content: center;
+}
+
+.form_background {
+  width: 604px;
+  height: 725px;
+  background: #F1EEEE;
+  border: 4px solid #000000;
+  box-shadow: -4px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 75px;
+  padding: 70px;
+ }
+
+ .form_background h1 {
+  text-align: left;
+  text-decoration: underline;
+  margin-bottom: 20px;
+ }
+
+label {
+  font-family: 'Zen Maru Gothic';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  width: 51px;
+  height: 29px;
+ }
+
+ input {
+  width: 442px;
+  height: 72px;
+  background: #FFFFFF;
+  border: 3px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 10px 0 30px 0;
+ }
+
+ .additional_input {
+  text-align: center;
+}
+
+/* ---/properties/index.erb--- */
+
+h1 {
+  text-align: center;
+  font-family: 'Zen Maru Gothic';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 43px;
+  color: #000000;
+}
+
+.properties_container {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.property_tile {
+  width: 406px;
+  height: 364px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background: #F1EEEE;
+  border: 3px solid #ACBAC3;
+  box-shadow: -4px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 75px;
+}
+
+.image_container {
+  max-width: 315px;
+  min-width: 315px;
+  height: 214px;
+  border: 1px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+img {
+  width: auto;
+  max-height: 100%;
+  display: block;
+}
+
+.text_container {
+  min-width: 315px;
+}
+
+.property_tile h2 {
+  font-family: 'Zen Maru Gothic';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  color: #000000;
+}
