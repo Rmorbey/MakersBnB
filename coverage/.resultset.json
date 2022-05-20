@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/archieparchie/Desktop/MakersBnB/spec/booking_spec.rb": {
+      "/Users/timgraham/Projects/Week5/MakersBnB/spec/booking_spec.rb": {
         "lines": [
           1,
           1,
@@ -59,11 +59,33 @@
           null,
           null,
           null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
           null,
           null
         ]
       },
-      "/Users/archieparchie/Desktop/MakersBnB/spec/database_connection_spec.rb": {
+      "/Users/timgraham/Projects/Week5/MakersBnB/spec/database_connection_spec.rb": {
         "lines": [
           1,
           1,
@@ -90,105 +112,7 @@
           null
         ]
       },
-      "/Users/archieparchie/Desktop/MakersBnB/spec/features/adding_property_spec.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/archieparchie/Desktop/MakersBnB/spec/features/authentication_spec.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/archieparchie/Desktop/MakersBnB/spec/features/homepage_spec.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/archieparchie/Desktop/MakersBnB/spec/features/set_availability_spec.rb": {
+      "/Users/timgraham/Projects/Week5/MakersBnB/spec/features/adding_property_spec.rb": {
         "lines": [
           1,
           1,
@@ -204,10 +128,93 @@
           1,
           1,
           null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
-      "/Users/archieparchie/Desktop/MakersBnB/spec/features/user_registration_spec.rb": {
+      "/Users/timgraham/Projects/Week5/MakersBnB/spec/features/authentication_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/timgraham/Projects/Week5/MakersBnB/spec/features/homepage_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/timgraham/Projects/Week5/MakersBnB/spec/features/set_availability_spec.rb": {
         "lines": [
           1,
           1,
@@ -216,13 +223,33 @@
           1,
           1,
           1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/timgraham/Projects/Week5/MakersBnB/spec/features/user_registration_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           1,
           null,
           null
         ]
       },
-      "/Users/archieparchie/Desktop/MakersBnB/spec/property_spec.rb": {
+      "/Users/timgraham/Projects/Week5/MakersBnB/spec/property_spec.rb": {
         "lines": [
           1,
           null,
@@ -270,7 +297,7 @@
           null
         ]
       },
-      "/Users/archieparchie/Desktop/MakersBnB/spec/user_spec.rb": {
+      "/Users/timgraham/Projects/Week5/MakersBnB/spec/user_spec.rb": {
         "lines": [
           1,
           1,
@@ -336,7 +363,7 @@
           null
         ]
       },
-      "/Users/archieparchie/Desktop/MakersBnB/spec/database_helpers.rb": {
+      "/Users/timgraham/Projects/Week5/MakersBnB/spec/database_helpers.rb": {
         "lines": [
           1,
           null,
@@ -347,6 +374,6 @@
         ]
       }
     },
-    "timestamp": 1652976625
+    "timestamp": 1653042159
   }
 }
