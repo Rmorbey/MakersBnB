@@ -14,7 +14,7 @@
 # Makers BnB
 ### A 5-day Makers project by Anish, Archie, Luiza, Russell and Tim - Team Hybrid Heroes
 ---
-
+Miro Board = https://miro.com/app/board/uXjVO4UJVio=/?share_link_id=693010513648
 ## Database setup
 1. Connect to psql
 2. Create the database using the psql command CREATE DATABASE makers_bnb;
