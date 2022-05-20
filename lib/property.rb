@@ -30,8 +30,9 @@ class Property
   def self.find_by_user(id:)
       return nil unless id
       result = DatabaseConnection.query("SELECT * FROM properties WHERE user_id = $1", [id])
-      Property.new(id: result[0]['id'], description: result[0]['description'], contact: result[0]['contact'], picture_url: result[0]['picture_url'], price_per_night: result[0]['price_per_night'], user_id: result[0]['user_id'])
-      
+      result.map { |property|
+        Property.new(id: property['id'], description: property['description'], contact: property['contact'], picture_url: property['picture_url'], price_per_night: property['price_per_night'], user_id: property['user_id'])
+      }
   end
 
   def self.find_by_property_id(id:)

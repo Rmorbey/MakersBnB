@@ -1,6 +1,8 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
+
+    <head>
     <meta name='viewport' content='widht=devide-width,initial-scale=1'>
     <title>MakersBnB</title>
     <link href='/styles.css' rel="stylesheet" type="text/css">
@@ -9,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   </head>
 
-  <body>
+    <body>
     <header>
       <div>
         <a href='/properties'><img src="/MakersBnB_full.png" id='logo'/></a>
@@ -21,30 +23,48 @@
         <form action="/properties/new" method="get">
           <input class='header_button' type='submit' value='List your property'>
         </form>
-        <form action="/bookings/<%=@user_id%>" method="get">
-          <input class='header_button' type='submit' value='My listings'>
       </div>
     </header>
 
-    <main>
-      <h1>We make-a the bed, we make-a the breakfast 🤌</h1>
-      <h2>
-        <%= flash[:notice] %>
-      </h2>
-    
-      <div class='properties_container'>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h1> Your Listings: </h1>
+
+     <div class='properties_container'>
         <% @properties.each do |property| %>
           <div class='property_tile'>
             <div class='image_container'>
-              <a href='properties/<%= property.id %>'><img src="<%= property.picture_url%>"/></a>
+              <img src="<%= property.picture_url%>"/>
             </div>
             <div class='text_container'>
               <h2><%= property.description%></h2>
               <h2>£<%= property.price_per_night %></h2>
+              <h2>Property <%= property.id%> </h2>
             </div>
           </div>
         <% end %>
       </div>
-    </main>
-  </body>
+
+
+    <h1> Booking Requests on your Listings: </h1>
+
+      <div class='properties_container'>
+        <% @requests.each do |booking| %>
+          <div class='property_tile'>
+            <div class='text_container'>
+              <h2> Request for Property <%= booking.property_id%> <br> for dates... </h2>
+              <br>
+              <h2> Starting <%= booking.start_date%></h2>
+              
+              <h2> Ending <%= booking.end_date %></h2>
+            </div>
+          </div>
+        <% end %>
+      </div>
+
+
+    </body>
 </html>

@@ -11,20 +11,21 @@ class Booking
   def self.all
     result = DatabaseConnection.query("SELECT * FROM bookings")
     result.map { |booking|
-      Booking.new(id: booking['id'], property_id: booking['property_id'], user_id: booking['user_id'], start_date: booking['start_date'], end_date: booking['end_date'], confirmed: result[0]['confirmed'])
+      Booking.new(id: booking['id'], property_id: booking['property_id'], user_id: booking['user_id'], start_date: booking['start_date'], end_date: booking['end_date'], confirmed: booking['confirmed'])
     }
   end
 
   def self.requested
     result = DatabaseConnection.query("SELECT * FROM bookings WHERE confirmed=false")
     result.map { |booking|
-      Booking.new(id: booking['id'], property_id: booking['property_id'], user_id: booking['user_id'], start_date: booking['start_date'], end_date: booking['end_date'], confirmed: result[0]['confirmed'])
+      Booking.new(id: booking['id'], property_id: booking['property_id'], user_id: booking['user_id'], start_date: booking['start_date'], end_date: booking['end_date'], confirmed: booking['confirmed'])
     }
   end
 
   def self.confirmed
     result = DatabaseConnection.query("SELECT * FROM bookings WHERE confirmed=true")
     result.map { |booking|
+
       Booking.new(id: booking['id'], property_id: booking['property_id'], user_id: booking['user_id'], start_date: booking['start_date'], end_date: booking['end_date'], confirmed: booking['confirmed'])
     }
   end
@@ -32,16 +33,18 @@ class Booking
   def self.find_requests_by_property_id(id:)
     result = DatabaseConnection.query("SELECT * FROM bookings WHERE property_id='#{id}'")
     result.map { |booking|
-      Booking.new(id: booking['id'], property_id: booking['property_id'], user_id: booking['user_id'], start_date: booking['start_date'], end_date: booking['end_date'], confirmed: result[0]['confirmed'])
+
+      Booking.new(id: booking['id'], property_id: booking['property_id'], user_id: booking['user_id'], start_date: booking['start_date'], end_date: booking['end_date'], confirmed: booking['confirmed'])
     }
   end
 
   def self.find_requests_by_user_id(id:)
     result = DatabaseConnection.query("SELECT * FROM bookings WHERE user_id='#{id}'")
     result.map { |booking|
-      Booking.new(id: booking['id'], property_id: booking['property_id'], user_id: booking['user_id'], start_date: booking['start_date'], end_date: booking['end_date'], confirmed: result[0]['confirmed'])
+      Booking.new(id: booking['id'], property_id: booking['property_id'], user_id: booking['user_id'], start_date: booking['start_date'], end_date: booking['end_date'], confirmed: booking['confirmed'])
     }
   end
+  
 
   attr_reader :id, :property_id, :user_id, :start_date, :end_date, :confirmed
 
