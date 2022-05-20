@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name='viewport' content='widht=devide-width,initial-scale=1'>
+    <title>MakersBnB</title>
+    <link href='/styles.css' rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div>
+        <a href='/properties'><img src="/MakersBnB_full.png" id='logo'/></a>
+      </div>
+      <div class='header_buttons'>
+        <form action="/bookings/<%=@id%>" method="get">
+          <input class='header_button' type='submit' value='Host admin'>
+        </form>
+        <form action="/properties/new" method="get">
+          <input class='header_button' type='submit' value='List your property'>
+        </form>
+        <form action="/sessions/destroy" method="post">
+          <input class='header_button' type="submit" value="Sign out" />
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <div class='team'>
+        <h1>Meet the team</h1>
+        <h2>Russell - Chief Eagle Eye</h2>
+        <h2>Archie - Chief Comedian</h2>
+        <h2>Luiza - Chief Overthinker</h2>
+        <h2>Anish - Chief Cheerleader</h2>
+        <h2>Tim - Chief Make-it-look-pretty</h2>
+        <h2>
+      </div>
+    </main>
+  </body>
+</html>

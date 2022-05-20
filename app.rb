@@ -66,7 +66,7 @@ class MakersBnB < Sinatra::Base
   get '/bookings/:id' do
     @properties = Property.find_by_user(id: params[:id])
     @requests = Booking.find_requests_by_user_id(id: params[:id])
-    
+    @id = params[:id]
     erb :'bookings/my_listings'
   end
 
@@ -91,6 +91,10 @@ class MakersBnB < Sinatra::Base
     session.clear
     flash[:notice] = 'You have signed out.'
     redirect '/sessions/new'
+  end
+
+  get '/team' do
+    erb :'team/members'
   end
 
   run! if app_file == $0
