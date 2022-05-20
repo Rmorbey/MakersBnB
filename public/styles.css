@@ -335,12 +335,10 @@ img {
 
  /* ---/properties/display.erb--- */
 
- .property_container {
-   border: solid 2px red;
- }
+ /* .property_container {
+ } */
 
  .pic_and_form {
-  border: solid 2px yellow;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;

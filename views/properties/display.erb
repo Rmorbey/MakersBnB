@@ -31,7 +31,7 @@
       <div class='property_container'>
         <div class='pic_and_form'>
           <div class='image_container' id='individual_cont'>
-             <img id='individual_pic' src="<%= @property.picture_url %>"  />
+              <img id='individual_pic' src="<%= @property.first.picture_url %>"  />
           </div>
           <div class='booking_form'>
             <form id="booking_form" action="/properties/<%=@id%>/book" method="post">
@@ -47,11 +47,7 @@
         </div>
         <div class='current_bookings'>
           <h1>Current bookings</h1>
-          <% @bookings.map |booking| %>
-            <ul>
-              <li><%= @booking.start_date %><%= @booking.end_date%></li>
-            <ul>
-          <% end %>
+
         </div>
       </div>
     <main>
