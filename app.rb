@@ -61,10 +61,21 @@ class MakersBnB < Sinatra::Base
     redirect "/properties/#{@id}"
   end
 
+  get '/bookings/:id' do
+    # @user_id = params[:user_id]
+    # Booking.find_by_user_id(user_id)
+    p params
+    @properties = Property.find_by_user(id: params[:id])
+  
+    
+    erb :'bookings/my_listings'
+  end
+
   get '/sessions/new' do
     erb :'sessions/new'
   end
 
+ 
   post '/sessions' do
     user = User.authenticate(email: params[:email], password: params[:password])
 
