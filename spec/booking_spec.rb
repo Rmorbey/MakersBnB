@@ -75,4 +75,14 @@ describe Booking do
     end
   end
 
+  describe '.find_requests_by_user_id' do
+    it 'checks all open requests for particular user' do
+      user = User.create(name: 'Teste Martin', email: 'test@example.com', password: 'password123')
+      property = Property.add(description: '2 bed home', contact: 'archie@makersbnb.com', picture_url: "https://imgur.com/uhj0V41", price_per_night: '30', user_id: user.id)
+      booking = Booking.create(property_id: property.id, user_id: user.id, start_date: '01/01/2022', end_date: '08/01/2022')
+  
+      expect(Booking.find_requests_by_user_id(id: user.id).first.user_id).to eq booking.user_id
+    end
+  end
+
 end
