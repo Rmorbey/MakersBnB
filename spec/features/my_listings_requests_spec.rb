@@ -15,10 +15,8 @@ feature 'view properties and requests' do
     expect(page).to have_text '2 bed home'
     expect(page).to have_text '£30'
     expect(page).to have_text "Property #{property.id}"
-    
-    
-
   end
+  
   scenario ' a user can view the requests made on their property' do
     host = User.create(name: 'Teste Martin', email: 'test@example.com', password: 'password123')
     guest = User.create(name: 'Timbo Thomas', email: 'timbo@example.com', password: 'password123')
