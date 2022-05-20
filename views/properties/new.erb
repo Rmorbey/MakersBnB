@@ -1,17 +1,32 @@
-<title> Add Property | Makers BnB </title>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name='viewport' content='widht=devide-width,initial-scale=1'>
+    <title>MakersBnB</title>
+    <link href='/styles.css' rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  </head>
 
-<form action="/properties" method="post">
-  <input type="text" name="description" placeholder="Property description..." required/>
-  <br>
-  <input type="text" name="picture_url" placeholder="Image url..." required/>
-  <br>
-  <input type="text" name="price_per_night" placeholder="Price per night in £"/>
+  <body>
+    <header>
+      <a href='/properties'><img src="/MakersBnB_full.png" /></a>
+    </header>
 
-  <input type='submit' value="Submit" />
-
-  
-</form>
-
-<form action="/sessions/destroy" method="post">
-  <input type="submit" value="Sign out" />
-</form>
+      <div class='form_background_fixed'>
+      </div>
+      <h1 id='h1_sign_up'>List your property</h1>
+      <form action='/properties' method='post'>
+        <label id='title_label'>Title</label>
+        <input id='title_input' type='text' name='Title' required>
+        <label id='description_label'>Description</label>
+        <input id='description_input' type='text' name='Description' required>
+        <label id='image_label' >Image</label> 
+        <input id='image_input' type='text' name='image-url' required>
+        <label id='price_label' >Price per night (£)</label> 
+        <input id='price_input' type='text' name='image-url' required>
+        <input id='submit_listing' type='submit' value='List your property'>
+      </form>
+  </body>
+</html>

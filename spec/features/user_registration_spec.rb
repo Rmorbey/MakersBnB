@@ -1,11 +1,12 @@
 feature 'registration' do
   scenario 'a user can sign up' do
-    visit '/users/new'
-    fill_in :name, with: 'Teste Martin'
-    fill_in :email, with: 'test@example.com'
-    fill_in :password, with: 'password123'
-    click_button 'Submit'
+    visit('/sessions/new')
+    click_button('Create an account')
+    fill_in :name, with: 'Archie'
+    fill_in :email, with: 'archie@makersbnb.com'
+    fill_in :password, with: 'password'
+    click_button 'Sign up now'
 
-    expect(page).to have_content 'Welcome, Teste'
+    expect(page).to have_content 'We make-a the bed'
   end
 end

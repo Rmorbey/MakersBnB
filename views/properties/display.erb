@@ -1,11 +1,59 @@
-<form action="/properties/<%=@id%>/book" method="post">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name='viewport' content='widht=devide-width,initial-scale=1'>
+    <title>MakersBnB</title>
+    <link href='/styles.css' rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  </head>
 
-  <label for="start_date"> Enter the start date </label>
-  <input type="date" name="start_date">
-  <label for="start_date"> Enter the end date </label>
-  <input type="date" name="end_date">
-  <input type="submit" value="Submit">
-  
-</form>
+  <body>
+    <header>
+      <div>
+        <a href='/properties'><img src="/MakersBnB_full.png" id='logo'/></a>
+      </div>
+      <div class='header_buttons'>
+        <form action="#" method="get">
+          <input class='header_button' type='submit' value='Host admin'>
+        </form>
+        <form action="/properties/new" method="get">
+          <input class='header_button' type='submit' value='List your property'>
+        </form>
+        <form action="/sessions/destroy" method="post">
+          <input class='header_button' type="submit" value="Sign out" />
+        </form>
+      </div>
+    </header>
 
-<%= flash[:notice] %>
+    <main>
+      <div class='property_container'>
+        <div class='pic_and_form'>
+          <div class='image_container' id='individual_cont'>
+             <img id='individual_pic' src="https://foyr.com/learn/wp-content/uploads/2022/02/best-home-staging-ideas-to-sell-your-house.jpg" />
+          </div>
+          <div class='booking_form'>
+            <form id="booking_form" action="/properties/<%=@id%>/book" method="post">
+                <h1>Book your stay</h1>
+                <label for="start_date"> Enter the start date </label><br />
+                <input type="date" name="start_date"><br /><br />
+                <label for="end_date"> Enter the end date </label><br/>
+                <input type="date" name="end_date"><br /><br />
+                <input id="booking_submit" type="submit" value="Request booking">
+            </form>
+            <%= flash[:notice] %>
+          </div>
+        </div>
+        <div class='current_bookings'>
+          <h1>Current bookings</h1>
+          <% @bookings.map |booking| %>
+            <ul>
+              <li><%= @booking.start_date %><%= @booking.end_date%></li>
+            <ul>
+          <% end %>
+        </div>
+      </div>
+    <main>
+  </body>
+</html>
