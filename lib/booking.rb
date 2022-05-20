@@ -39,7 +39,7 @@ class Booking
   def self.find_requests_by_user_id(id:)
     result = DatabaseConnection.query("SELECT * FROM bookings WHERE user_id='#{id}'")
     result.map { |booking|
-      Booking.new(id: booking['id'], property_id: booking['property_id'], user_id: booking['user_id'], start_date: booking['start_date'], end_date: booking['end_date'])
+      Booking.new(id: booking['id'], property_id: booking['property_id'], user_id: booking['user_id'], start_date: booking['start_date'], end_date: booking['end_date'], confirmed: result[0]['confirmed'])
     }
   end
 
