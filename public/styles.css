@@ -383,3 +383,8 @@ img {
    width: 1000px;
    margin-left: 10%;
  }
+
+ .team h2 {
+   margin-top: 20px;
+   text-align: center;
+ }
