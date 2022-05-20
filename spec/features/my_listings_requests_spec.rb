@@ -12,7 +12,7 @@ feature 'view properties and requests' do
 
     click_button 'My listings'
     expect(current_path).to eq "/bookings/#{user.id}"
-    expect(page).to have_content 'My listings:'
+    expect(page).to have_content 'Your Listings:'
     expect(page).to have_content '2 bed home'
     
 
