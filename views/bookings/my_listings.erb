@@ -42,17 +42,29 @@
             <div class='text_container'>
               <h2><%= property.description%></h2>
               <h2>£<%= property.price_per_night %></h2>
+              <h2>Property <%= property.id%> </h2>
             </div>
           </div>
         <% end %>
       </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
 
     <h1> Booking Requests on your Listings: </h1>
+
+      <div class='properties_container'>
+        <% @requests.each do |booking| %>
+          <div class='property_tile'>
+            <div class='text_container'>
+              <h2> Request for Property <%= booking.property_id%> <br> for dates... </h2>
+              <br>
+              <h2> Starting <%= booking.start_date%></h2>
+              
+              <h2> Ending <%= booking.end_date %></h2>
+            </div>
+          </div>
+        <% end %>
+      </div>
+
 
     </body>
 </html>

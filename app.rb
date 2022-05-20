@@ -62,11 +62,8 @@ class MakersBnB < Sinatra::Base
   end
 
   get '/bookings/:id' do
-    # @user_id = params[:user_id]
-    # Booking.find_by_user_id(user_id)
-    p params
     @properties = Property.find_by_user(id: params[:id])
-  
+    @requests = Booking.find_requests_by_user_id(id: params[:id])
     
     erb :'bookings/my_listings'
   end
