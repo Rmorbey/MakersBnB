@@ -33,4 +33,26 @@ describe Booking do
       expect(Booking.all.first.id).to eq booking.id
     end
   end
+
+  describe '.requested' do
+    it 'checks to see that booking request is in bookings table' do
+      user = User.create(name: 'Teste Martin', email: 'test@example.com', password: 'password123')
+      property = Property.add(description: '2 bed home', contact: 'archie@makersbnb.com', picture_url: "https://imgur.com/uhj0V41", price_per_night: '30', user_id: user.id)
+      booking = Booking.create(property_id: property.id, user_id: user.id, start_date: '01/01/2022', end_date: '08/01/2022')
+  # result = DatabaseConnection.query("SELECT * FROM bookings WHERE confirmed=#{booking.confirmed}")
+      expect(Booking.requested.first.id).to eq booking.id
+    end
+  end
+
+  describe '.requests_by_property_id' do
+    it 'checks all open requests for particular property' do
+      user = User.create(name: 'Teste Martin', email: 'test@example.com', password: 'password123')
+      property = Property.add(description: '2 bed home', contact: 'archie@makersbnb.com', picture_url: "https://imgur.com/uhj0V41", price_per_night: '30', user_id: user.id)
+      booking = Booking.create(property_id: property.id, user_id: user.id, start_date: '01/01/2022', end_date: '08/01/2022')
+      
+      expect(Booking.find_requests_by_property_id(id: property.id).first.property_id).to eq property.id
+    end
+  end
+
+
 end
