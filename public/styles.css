@@ -378,3 +378,8 @@ img {
   text-decoration: underline;
   margin-bottom: 20px;
  }
+
+ .current_bookings {
+   width: 1000px;
+   margin-left: 10%;
+ }
