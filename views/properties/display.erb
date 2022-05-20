@@ -31,7 +31,7 @@
       <div class='property_container'>
         <div class='pic_and_form'>
           <div class='image_container' id='individual_cont'>
-             <img id='individual_pic' src="https://foyr.com/learn/wp-content/uploads/2022/02/best-home-staging-ideas-to-sell-your-house.jpg" />
+             <img id='individual_pic' src="<%= @property.picture_url %>"  />
           </div>
           <div class='booking_form'>
             <form id="booking_form" action="/properties/<%=@id%>/book" method="post">
