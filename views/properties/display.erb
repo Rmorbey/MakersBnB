@@ -15,7 +15,7 @@
         <a href='/properties'><img src="/MakersBnB_full.png" id='logo'/></a>
       </div>
       <div class='header_buttons'>
-        <form action="#" method="get">
+        <form action="/bookings/<%=@id%>" method="get">
           <input class='header_button' type='submit' value='Host admin'>
         </form>
         <form action="/properties/new" method="get">
@@ -47,9 +47,15 @@
         </div>
         <div class='current_bookings'>
           <h1>Current bookings</h1>
-
+          <% if @bookings != nil %>
+            <% @bookings.map do |booking| %>
+              <ul>
+                <li><p>Booked: <%= booking.start_date %> - <%= booking.end_date%></p></li>
+              </ul>
+            <% end %>
+          <% end %>
         </div>
       </div>
-    <main>
+    </main>
   </body>
 </html>

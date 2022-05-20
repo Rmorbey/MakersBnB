@@ -30,6 +30,7 @@ class Booking
     }
   end
 
+  
   def self.find_requests_by_property_id(id:)
     result = DatabaseConnection.query("SELECT * FROM bookings WHERE property_id='#{id}'")
     result.map { |booking|
@@ -44,10 +45,18 @@ class Booking
       Booking.new(id: booking['id'], property_id: booking['property_id'], user_id: booking['user_id'], start_date: booking['start_date'], end_date: booking['end_date'], confirmed: booking['confirmed'])
     }
   end
+
+
+  def self.confirmed_property_id(id:)
+    result = DatabaseConnection.query("SELECT * FROM bookings WHERE confirmed=true AND property_id='#{id}'")
+    result.map { |booking|
+      Booking.new(id: booking['id'], property_id: booking['property_id'], user_id: booking['user_id'], start_date: booking['start_date'], end_date: booking['end_date'], confirmed: booking['confirmed'])
+  }
+  end
   
 
   attr_reader :id, :property_id, :user_id, :start_date, :end_date, :confirmed
-
+  
   def initialize(id:, property_id:, user_id:, start_date:, end_date:, confirmed:)
     @id = id
     @property_id = property_id
@@ -63,5 +72,12 @@ class Booking
       [@property_id]
     )
     @confirmed = true
+  end
+
+  def self.confirmed_property_id(id:)
+    result = DatabaseConnection.query("SELECT * FROM bookings WHERE confirmed=true AND property_id='#{id}'")
+    result.map { |booking|
+      Booking.new(id: booking['id'], property_id: booking['property_id'], user_id: booking['user_id'], start_date: booking['start_date'], end_date: booking['end_date'], confirmed: booking['confirmed'])
+   }
   end
 end

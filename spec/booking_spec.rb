@@ -85,4 +85,15 @@ describe Booking do
     end
   end
 
+  describe '.confirmed_property_id' do
+    it 'returns booking that are confirmed by property id' do
+      user = User.create(name: 'Teste Martin', email: 'test@example.com', password: 'password123')
+      property = Property.add(description: '2 bed home', contact: 'archie@makersbnb.com', picture_url: "https://imgur.com/uhj0V41", price_per_night: '30', user_id: user.id)
+      booking = Booking.create(property_id: property.id, user_id: user.id, start_date: '01/01/2022', end_date: '08/01/2022')
+      booking.accept
+      expect(booking.confirmed).to eq true
+      expect(Booking.confirmed_property_id(id: property.id).first.property_id).to eq booking.property_id
+    end
+  end
+
 end
