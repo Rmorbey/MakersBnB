@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/timgraham/Projects/Week5/MakersBnB/spec/booking_spec.rb": {
+      "/Users/luiza/projects/makers-bnb/spec/booking_spec.rb": {
         "lines": [
           1,
           1,
@@ -76,6 +76,171 @@
           1,
           1,
           1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/luiza/projects/makers-bnb/spec/database_connection_spec.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/luiza/projects/makers-bnb/spec/features/adding_property_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/luiza/projects/makers-bnb/spec/features/authentication_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/luiza/projects/makers-bnb/spec/features/homepage_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/luiza/projects/makers-bnb/spec/features/my_listings_requests_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          0,
+          null,
           null,
           null,
           1,
@@ -85,172 +250,51 @@
           null
         ]
       },
-      "/Users/timgraham/Projects/Week5/MakersBnB/spec/database_connection_spec.rb": {
+      "/Users/luiza/projects/makers-bnb/spec/features/web_helpers.rb": {
         "lines": [
           1,
           1,
-          null,
           1,
           1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
           null
         ]
       },
-      "/Users/timgraham/Projects/Week5/MakersBnB/spec/features/adding_property_spec.rb": {
+      "/Users/luiza/projects/makers-bnb/spec/features/set_availability_spec.rb": {
         "lines": [
           1,
           1,
           1,
           1,
-          1,
-          1,
-          1,
-          1,
-          null,
           0,
           0,
           0,
           0,
           null,
           0,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/timgraham/Projects/Week5/MakersBnB/spec/features/authentication_spec.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/timgraham/Projects/Week5/MakersBnB/spec/features/homepage_spec.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-
-      "/Users/timgraham/Projects/Week5/MakersBnB/spec/features/set_availability_spec.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/timgraham/Projects/Week5/MakersBnB/spec/features/user_registration_spec.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
+          0,
+          0,
           0,
           null,
           null
         ]
       },
-      "/Users/timgraham/Projects/Week5/MakersBnB/spec/property_spec.rb": {
+      "/Users/luiza/projects/makers-bnb/spec/features/user_registration_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/luiza/projects/makers-bnb/spec/property_spec.rb": {
         "lines": [
           1,
           null,
@@ -295,10 +339,19 @@
           1,
           null,
           null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
-      "/Users/timgraham/Projects/Week5/MakersBnB/spec/user_spec.rb": {
+      "/Users/luiza/projects/makers-bnb/spec/user_spec.rb": {
         "lines": [
           1,
           1,
@@ -364,7 +417,7 @@
           null
         ]
       },
-      "/Users/timgraham/Projects/Week5/MakersBnB/spec/database_helpers.rb": {
+      "/Users/luiza/projects/makers-bnb/spec/database_helpers.rb": {
         "lines": [
           1,
           null,
@@ -375,6 +428,6 @@
         ]
       }
     },
-    "timestamp": 1653042159
+    "timestamp": 1653052010
   }
 }
