@@ -196,7 +196,7 @@ I would like for the space to remain available with multiple requests.
 
 1. Fork this repository
 2. Clone your fork to your local machine
-3. Typ `bundle install` to install dependencies
+3. Type `bundle install` to install dependencies
 
 ### Database setup
 1. Connect to psql
