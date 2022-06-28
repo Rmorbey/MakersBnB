@@ -34,6 +34,8 @@ It uses:
 - [Capybara] For user testing
 - [RSPEC] For unit testing
 - [PostgreSQL] Our local database
+- [CSS]
+- [HTML]
 
 
 ## Card wall
