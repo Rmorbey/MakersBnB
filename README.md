@@ -51,103 +51,103 @@ It uses:
 
 ### MVP User Stories
 
-`
+```
 As a user,
 So that I can host my property,
 I would like to list a space.
-`
+```
 
-`
+```
 As a user,
 So that I can go on holiday,
 I would like to view a space.
-`
+```
 
-`
+```
 As a user,
 So that I can make a booking,
 I would like to contact the host.
-`
+```
 
 ### Headline Specs
 
-`
+```
 As a user,
 so I can keep track of my listings,
 I would like to make an account for MakersBnB.
-`
+```
 
-`
+```
 As a signed-up user,
 so I can use the platform,
 I would like to log in and log out of MakersBnB.
-`
+```
 
-`
+```
 As a logged-in user,
 so I can host my space,
 I would like to list a space.
-`
+```
 
-`
+```
 As a user,
 so I can keep track of my listings,
 I would like my acccount to keep track of multiple spaces.
-`
+```
 
-`
+```
 As a user,
 so I can accurately advertise my space,
 I would like to add a name to my space.
-`
+```
 
-`
+```
 As a user,
 so I can accurately advertise my space,
 I would like to provide a short description.
-`
+```
 
-`
+```
 As a user,
 so I can accurately advertise my space,
 I would like to add a price per night.
-`
+```
 
-`
+```
 As a host,
 so I can keep track of availability,
 I would like to have a range of dates where my space is unoccupied.
-`
+```
 
-`
+```
 As a guest,
 so that I can plan my booking,
 I would like to see a range of dates where the space is available.
-`
+```
 
-`
+```
 As a customer,
 so I can stay in a BnB,
 I would like to request to hire a space for one specific night.
-`
+```
 
-`
+```
 As a host,
 so I can confirm the listing,
 I would like to approve the request made by the customer.
-`
+```
 
-`
+```
 As a user,
 so I don't get double bookings for the same night,
 I would like to make approved occupied dates unavailable to book to other guests.
-`
+```
 
-`
+```
 As a host,
 So my space is fairly available,
 I would like for the space to remain available with multiple requests.
-`
+```
 
 ## Team Approach
 
